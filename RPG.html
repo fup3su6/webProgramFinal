@@ -1,0 +1,127 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type">
+<title>優先體驗</title>
+
+<style>
+
+body{
+	background-image: url("bg.jpg");
+	background-size:100% 100%;
+	text-align:center;
+}
+
+.li{
+	color:white;
+	border-size:0;
+	background-color:rgba(192,192,192,0.6);
+	font-size:30;
+	
+	text-align:center;
+	font-family:sans-serif;
+	padding:20;
+}
+
+.li a{
+	text-decoration:none;
+	color:white;
+}
+
+.li a:hover{
+	font-weight: bold;
+}
+
+.li a:active{
+	color:rgb(111, 199, 35);
+}
+
+canvas{
+    border:2px solid black;
+    background-image: url(images/bg.jpg);
+	margin-left: 25%;
+    margin-right: 25%;
+	<!--margin-left:150px;
+	margin-right:150px;-->
+	
+}
+
+#talkBox{
+    height:20px;
+    color:#fea201;
+    font-size:26px;
+    font-weight:bold;
+	text-align:center;
+}
+
+.button {
+  background-color: #9b6545;
+  border-radius: 10px;
+  color: #f6eec2;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+
+  transition-duration: 0.6s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: #f6eec2; 
+  color: brown; 
+  border: 2px solid #9b6545;
+}
+
+.button1:hover {
+  background-color: #9b6545;
+  color: white;
+}
+
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="RPG.js"></script>
+</head>
+
+<body>
+
+<table class="li" style="width:100%;">
+<td><a href="index.html"  style="color:rgb(254, 255, 177); "><b>安心農場</b></a></td>
+<td><a href="about.html">關於我們</a></td>
+<td><a href="random.html">好多植物</a></td>
+<td><a href="price.html">價格公道</a></td>
+<td><a href="quiz.html">最佳選擇</a></td>
+<td><a href="YT.html">農場實拍</a></td>
+<td><a href="RPG.html" style="color:rgb(135, 255, 209);font-weight: bold;">優先體驗</a></td>
+</table>
+
+<br>
+
+<div align="center">
+<table bgcolor="#f6eec2" style="width:60%; margin:5px;padding:35px;border:3px solid #fff;border-radius: 10px;">
+<td>
+<h1 align="center">
+<font color="brown">小乳的每日任務</font>
+</h1>
+<p align="center"><font color="brown">小乳每天的工作是把布丁放到指定位置，透過方向鍵體驗一下小乳的工作ㄅ</font></p>
+    <div>
+        <canvas id="myCanvas" width="540" height="540"></canvas>
+        <p id="talkBox"></p>
+		<div align="center">
+		<button class="button button1" onClick="refreshPage()">Restart</button>
+		<button class="button button1" onClick="location.href='level2.html'">Hard</button></div>
+    </div>
+</td>
+</table>
+</div>
+
+
+
+</body>
+
+</html>
